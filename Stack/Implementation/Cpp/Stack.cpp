@@ -80,6 +80,7 @@ public:
             int trash = pop();
     }
 
+    // Method to check if  the Queue is already Full
     bool isFull()
     {
         return l == sizeof(arr) / sizeof(int);
