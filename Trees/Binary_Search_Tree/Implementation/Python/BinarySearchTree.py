@@ -1,4 +1,4 @@
-class BinaryTree:
+class BinarySearchTree:
     def __init__(self, root):
         self.key = root
         self.left = None
@@ -20,6 +20,20 @@ class BinaryTree:
             t.right = self.right
             self.right = t
     
+    def insert(self, x):
+        if self.getRootValue() > x:
+            if self.left != None:
+                insert(self.left, x)
+            else:
+                insertLeft(self, x)
+                
+        if self.getRootValue() <= x:
+            if self.left != None:
+                insert(self.right, x)
+            else:
+                insertRight()
+
+
     def getRight(self):
         return self.right
     
@@ -33,10 +47,9 @@ class BinaryTree:
         return self.key
 
     def preOrder(self):
-        print(self.key)
-
+        print(self.key)insert(self.left,x)
         if self.left:
             self.left.preOrder()
         if self.right:
-            self.reight
+            self.right
 
