@@ -31,7 +31,7 @@ class BinarySearchTree:
             if self.left != None:
                 insert(self.right, x)
             else:
-                insertRight()
+                insertRight(self, x)
 
 
     def getRight(self):
@@ -47,7 +47,7 @@ class BinarySearchTree:
         return self.key
 
     def preOrder(self):
-        print(self.key)insert(self.left,x)
+        print(self.key)
         if self.left:
             self.left.preOrder()
         if self.right:
