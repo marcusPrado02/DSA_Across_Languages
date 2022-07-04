@@ -91,8 +91,11 @@ public class BinarySearchTree {
    }
 
 
-   public int getroot() throws Exception {
-      return root.element;
+   public int getLargestElement() throws Exception {
+      TreeNode node = root;
+      for(TreeNode tmp = node; tmp.right != null; tmp = node = tmp.right);
+
+      return node.element;
    }
 
 }
