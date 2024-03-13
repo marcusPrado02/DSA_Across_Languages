@@ -24,6 +24,8 @@ Neste momento, temos implementações em várias linguagens populares, incluindo
 
 - Python
 - C++
+- C#
+- PHP
 - Java
 - JavaScript
 - Ruby
